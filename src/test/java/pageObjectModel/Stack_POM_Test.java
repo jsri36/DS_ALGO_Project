@@ -1,4 +1,4 @@
-package pom;
+package pageObjectModel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,10 +20,6 @@ import dataProviders.Constants;
 public class Stack_POM_Test {
 
 	WebDriver driver;
-	
-//	String Signin = "https://dsportalapp.herokuapp.com/login";
-//	String stack = "https://dsportalapp.herokuapp.com/stack";
-//	String stack_app = "https://dsportalapp.herokuapp.com/stack/stack-applications/";
 	
 	By name = By.name("username");
 	By pass = By.name("password");
@@ -53,7 +49,6 @@ public class Stack_POM_Test {
 	{
 		driver.findElement(name).sendKeys(username);
 		driver.findElement(pass).sendKeys(password);
-	//	System.out.println("username---"+username+"password---"+password);
 	}
 	public void clickSignin()
 	{
@@ -61,7 +56,6 @@ public class Stack_POM_Test {
 	}
 	public String compareTitle() {
 		String pageTitle = driver.getTitle();
-	//	System.out.println("pageTitle----------"+pageTitle);
 		return pageTitle;
     } 
 	public void selectDropdown()
