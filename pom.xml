@@ -3,22 +3,23 @@
   <groupId>DS_ALGO_Project</groupId>
   <artifactId>DS_ALGO_Project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <dependencies>
 	  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-<dependency>
+ <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>7.4.1</version>
-</dependency>
+</dependency> 
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
     <version>7.4.1</version>
     <scope>test</scope>
-</dependency>
+</dependency> 
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-<dependency>
+ <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>7.4.1</version>
@@ -29,7 +30,17 @@
     <artifactId>allure-cucumber7-jvm</artifactId>
     <version>2.19.0</version>
 </dependency>
-
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.8</version>
+</dependency>
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.5.1</version>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -74,7 +85,11 @@
     <artifactId>webdrivermanager</artifactId>
     <version>5.3.2</version>
 </dependency>
-
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.22</version>
+</dependency>
   </dependencies>
   <properties>
   	<maven.compiler.source>1.8</maven.compiler.source>
