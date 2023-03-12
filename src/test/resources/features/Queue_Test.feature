@@ -2,7 +2,7 @@
 Feature: Queue
    
   @TS_008_TC_001
-  Scenario: 
+  Scenario: The user is directed to "Home" Page
     Given The user is on the Signin page of DS Algo portal
 		When The user enters valid "Numpy@sdet100_100" and "Loginsucess@123" 
 		And The user click on login button

@@ -2,7 +2,7 @@
 Feature: Stack
    
   @TS_007_TC_001
-  Scenario: 
+  Scenario: The user is directed to "Home" Page
     Given The user is on Signin page of DS Algo portal
     When The user enter valid "Numpy@sdet100_100" and "Loginsucess@123"
     Then user redirected to homepage
