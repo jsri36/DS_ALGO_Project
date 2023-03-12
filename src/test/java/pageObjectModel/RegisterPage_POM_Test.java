@@ -33,7 +33,7 @@ public class RegisterPage_POM_Test {
 	}	
 	public void openProtal()
 	{	
-		driver.findElement(signout).click();
+	//	driver.findElement(signout).click();
 		driver.get(Constants.APP_URL);    
 	}
 	public void clickstart()
@@ -125,7 +125,7 @@ public class RegisterPage_POM_Test {
         return actual_result;  
 	}
 	public void openSignIn()
-	{
+	{	driver.findElement(signout).click();
 		driver.findElement(signin).click();
 	}
 	public void ClickSignIn(String username,String password)

@@ -8,7 +8,7 @@ import java.time.Duration;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -95,7 +95,7 @@ public class Stack_POM_Test {
 	{
 		WebElement outputtext = driver.findElement(output);
 		String getoutput = outputtext.getText();
-		if(!getoutput.isBlank())
+		if(!getoutput.isEmpty())
 			Assert.assertTrue(true);
 		else
 			Assert.assertTrue(false);
@@ -124,7 +124,7 @@ public class Stack_POM_Test {
 		alert.accept();
 		WebElement outputtext = driver.findElement(output);
 		String getoutput = outputtext.getText();
-		if(getoutput.isBlank())
+		if(getoutput.isEmpty())
 			Assert.assertTrue(true);
 		else
 			Assert.assertTrue(false);
